@@ -1,6 +1,8 @@
 class Client:
     def __init__(self, name, balance):
-        pass
+        self.name = name
+        self.balance = balance
 
     def deduct_money(self, amount):
-        pass
+        self.balance -= amount
+        return True
